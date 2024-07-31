@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kirar's google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="frstimg">
+            <img src="google.png" alt="google">
+        </div>
+        <div class="search">
+            <input type="text" id="inpt" placeholder="search here" autocomplete="off" autofocus>
+            <i class="fa fa-search" id="sicon"></i>
+        </div>
+        <p id="para">designed by <i><u style="color: red;">kirar..</u><i></i></p>
+    </div>
+
+    <script>
+        document.getElementById("sicon").addEventListener('click',()=>{
+            window.location.href =`https://www.google.com/search?q=${document.getElementById("inpt").value}`;
+
+        })
+        document.getElementById('inpt').addEventListener('keypress',()=>{
+            document.getElementById('para').style.setProperty('display','block');
+            <!-- document.body.style.setProperty('background-image','url(kirar.jpeg)'); -->
+        })
+
+       
+    </script>
+</body>
+</html>
